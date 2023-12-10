@@ -86,7 +86,5 @@ export default function ticker(wrapperID, opts) {
       window.requestAnimationFrame(step);
     });
     k = k == texts.length - 1 ? 0 : k + 1;
-  }, 2500);
+  }, options.wait);
 }
-
-ticker("text4");
